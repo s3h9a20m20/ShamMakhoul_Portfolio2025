@@ -41,4 +41,6 @@ _This readme is inspired from [Brittany Chiang's github](https://github.com/bchi
 
 This project is open source and available under the [MIT License](https://github.com/Tajmirul/portfolio-2.0/blob/main/LICENSE).
 
+
+
 ## npx next dev لتشغيل البرنامج
