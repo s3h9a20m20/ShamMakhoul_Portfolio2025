@@ -46,4 +46,6 @@
 - Built fully functional **Offline-First** applications using IndexedDB  
 - Developed production-ready apps currently used in real businesses
 <img src="https://komarev.com/ghpvc/?username=s3h9a20m20&color=brightgreen" alt="Profile views" />
+
+
 ⭐ Always excited for new opportunities & collaborations – feel free to reach out! ✨✨
