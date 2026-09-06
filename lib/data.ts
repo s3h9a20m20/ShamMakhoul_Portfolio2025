@@ -6,15 +6,12 @@ export const GENERAL_INFO = {
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Sham, I am reaching out to you because...',
 
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
-    upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+    // upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
 };
 
 export const SOCIAL_LINKS = [
     { name: 'github', url: 'https://github.com/s3h9a20m20' },
     { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
 ];
 
 export const MY_STACK = {
@@ -31,30 +28,12 @@ export const MY_STACK = {
             name: 'React',
             icon: '/logo/react.png',
         },
-        // {
-        //     name: 'Next.js',
-        //     icon: '/logo/next.png',
-        // },
-        // {
-        //     name: 'Redux',
-        //     icon: '/logo/redux.png',
-        // },
+
         {
             name: 'Tailwind CSS',
             icon: '/logo/tailwind.png',
         },
-        // {
-        //     name: 'GSAP',
-        //     icon: '/logo/gsap.png',
-        // },
-        // {
-        //     name: 'Framer Motion',
-        //     icon: '/logo/framer-motion.png',
-        // },
-        // {
-        //     name: 'Sass',
-        //     icon: '/logo/sass.png',
-        // },
+
         {
             name: 'Bootstrap',
             icon: '/logo/bootstrap.svg',
@@ -91,32 +70,16 @@ export const MY_STACK = {
             name: 'MySQL',
             icon: '/logo/mysql.svg',
         },
-        // {
-        //     name: 'PostgreSQL',
-        //     icon: '/logo/postgreSQL.png',
-        // },
-        // {
-        //     name: 'MongoDB',
-        //     icon: '/logo/mongodb.svg',
-        // },
-        // {
-        //     name: 'Prisma',
-        //     icon: '/logo/prisma.png',
-        // },
+        {
+            name: 'SQLlight',
+            icon: '/logo/postgreSQL.png',
+        },
     ],
     tools: [
         {
             name: 'Git',
             icon: '/logo/git.png',
         },
-        // {
-        //     name: 'Docker',
-        //     icon: '/logo/docker.svg',
-        // },
-        // {
-        //     name: 'AWS',
-        //     icon: '/logo/aws.png',
-        // },
         {
             name: 'Figma',
             icon: '/logo/Figma.png',
@@ -126,199 +89,324 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'Electro EV',
-        slug: 'electro-ev',
-        liveUrl: 'https://electroev.co.uk/',
-        year: 2025,
+        title: 'DT-Teeth',
+        slug: 'dt-teeth',
+        sourceCode: 'https://github.com/s3h9a20m20/DT-Teeth-System',
+        liveUrl: '',
+        year: 2026,
         description: `
-      A complete agency portfolio platform built for Electro EV to showcase their services, blog content, and product offerings. <br/> <br/>
-      
-      Key Features:<br/>
-      <ul>
-        <li>🛠️ Service Display System: Interactive service showcase with synchronized sliders</li>
-        <li>✍️ Blog Management: SEO-friendly blog with categorization and search</li>
-        <li>🛒 Product Catalog: Organized product display with filtering capabilities</li>
-        <li>📱 Fully Responsive: Optimized for all device sizes</li>
-        <li>⚡ Fast Performance: Optimized Next.js frontend with ISR (Incremental Static Regeneration)</li>
-      </ul><br/>
-      
-      Technical Highlights:
-      <ul>
-        <li>Implemented complex slider synchronization logic using Swiper.js</li>
-        <li>Customized Payload CMS admin panel for intuitive content management</li>
-        <li>Developed reusable UI components with shadcn for design consistency</li>
-        <li>Configured efficient data fetching strategies in Next.js</li>
-      </ul>
-      `,
+        A comprehensive Dental Clinic Management System that connects patients, doctors, secretaries, lab, and warehouse in one integrated platform.<br/><br/>
+        
+        <strong>Key Features:</strong>
+        <ul>
+          <li>Patient Mobile App for appointments, medical records, prescriptions, and billing</li>
+          <li>Web Dashboard for Admin, Doctor, and Secretary</li>
+          <li>Lab & Warehouse management module</li>
+          <li>Role-based access control and notifications</li>
+          <li>Bilingual support (Arabic / English) with RTL</li>
+          <li>Offline capabilities for critical data</li>
+        </ul>
+        `,
         role: `
-      Full-Stack Developer <br/>
-      Owned the entire development lifecycle:
-      <ul>
-        <li>✅ Backend: Configured Payload CMS with custom collections for services, blogs, and products</li>
-        <li>🎨 Frontend: Built all UI components using Tailwind CSS and shadcn</li>
-        <li>🔄 State Management: Implemented client-side data fetching and caching</li>
-        <li>🖥️ CMS Customization: Created admin interfaces for content editors</li>
-        <li>🚀 Deployment: Set up CI/CD pipeline for Vercel hosting</li>
-        <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
-      </ul>
-      `,
-        techStack: [
-            'Next.js',
-            'Payload CMS',
-            'Tailwind CSS',
-            'shadcn',
-            'Swiper.js',
-            'React Hook Form',
-            'Vercel',
-        ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
-        longThumbnail: '/projects/long/mti-electronics.webp',
-        images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
-        ],
-    },
-    {
-        title: 'Epikcart',
-        slug: 'epikcart',
-        techStack: [
-            'React',
-            'Redux',
-            'React i18n',
-            'Tailwind CSS',
-            'Framer Motion',
-            'debouncing',
-            'Api Integration',
-        ],
-        thumbnail: '/projects/thumbnail/epikcart.jpg',
-        longThumbnail: '/projects/long/epikcart.jpg',
-        images: [
-            '/projects/images/epikcart-1.png',
-            '/projects/images/epikcart-2.png',
-            '/projects/images/epikcart-3.png',
-            '/projects/images/epikcart-4.png',
-            '/projects/images/epikcart-5.png',
-        ],
-        liveUrl: 'https://demo.epikcart.siphertech.com/',
-        year: 2023,
-        description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
-        role: `As the frontend developer in a team of five, I: <br/>
-        - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
-        - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
-        - Integrated multi-language support with React i18n, including RTL handling.<br/>
-        - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
-    },
-    {
-        title: 'Resume Roaster',
-        slug: 'resume-roaster',
-        techStack: [
-            'GPT-4',
-            'Next.js',
-            'Postgressql',
-            'Prisma',
-            'Tailwind CSS',
-        ],
-        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
-        longThumbnail: '/projects/long/resume-roaster.jpg',
-        images: [
-            '/projects/images/resume-roaster-1.png',
-            '/projects/images/resume-roaster-2.png',
-            '/projects/images/resume-roaster-3.png',
-        ],
-        liveUrl: 'https://resume-roaster.vercel.app/',
-        year: 2023,
-        description:
-            'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
-        role: `As the sole developer and business owner, I:<br/>
-        - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
-        - Integrated GPT-4 for AI-driven feedback and insights.<br/>
-        - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
-    },
-    {
-        title: 'Real Estate',
-        slug: 'property-pro',
+        Frontend Developer (Web Dashboard)<br/>
+        <ul>
+          <li>Designed and developed the complete Web Dashboard for Admin, Doctor, and Secretary using React.js</li>
+          <li>Implemented appointment management, medical records, treatments, prescriptions, and billing interfaces</li>
+          <li>Built responsive and bilingual UI with role-based views</li>
+          <li>Integrated with Laravel Backend via REST APIs</li>
+        </ul>
+        `,
         techStack: [
             'React.js',
-            'Redux',
+            'JavaScript',
             'Tailwind CSS',
-            'React i18n',
-            'Framer Motion',
+            'HTML5',
+            'CSS3',
+            'REST APIs',
+            'Laravel',
         ],
-        thumbnail: '/projects/thumbnail/property-pro.jpg',
-        longThumbnail: '/projects/long/property-pro.jpg',
+        thumbnail: '/projects/images/dt-teeth-15.png',
+        longThumbnail: '/projects/images/dt-teeth-18.png',
         images: [
-            '/projects/images/property-pro-1.png',
-            '/projects/images/property-pro-2.png',
-            '/projects/images/property-pro-3.png',
+            '/projects/images/dt-teeth-1.png',
+            '/projects/images/dt-teeth-2.png',
+            '/projects/images/dt-teeth-3.png',
+            '/projects/images/dt-teeth-4.png',
+            '/projects/images/dt-teeth-5.png',
+            '/projects/images/dt-teeth-9.png',
+            '/projects/images/dt-teeth-10.png',
+            '/projects/images/dt-teeth-11.png',
+            '/projects/images/dt-teeth-12.png',
+            '/projects/images/dt-teeth-13.png',
+            '/projects/images/dt-teeth-14.png',
+            '/projects/images/dt-teeth-15.png',
+            '/projects/images/dt-teeth-16.png',
+            '/projects/images/dt-teeth-17.png',
+            '/projects/images/dt-teeth-18.png',
         ],
-        liveUrl: 'https://demo.propertypro.siphertech.com/',
-        year: 2023,
-        description:
-            'PropertyPro is a real estate management platform offering users a seamless experience to explore, manage, and view property listings. The application emphasizes accessibility and responsive design, ensuring a smooth interface across devices.',
-        role: `As the frontend developer, I:<br/>
-        - Built the frontend using React, Redux, RTK Query, Framer Motion, and Tailwind CSS.<br/>
-        - Integrated dynamic state management for efficient handling of property data.<br/>
-        - Implemented multi-language support with React i18n to cater to diverse audiences.<br/>
-        - Enhanced user interaction with animations and transitions using Framer Motion.`,
     },
     {
-        title: 'Consulting Finance',
-        slug: 'crenotive',
-        techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
-        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-        longThumbnail: '/projects/long/consulting-finance.jpg',
-        images: [
-            '/projects/images/consulting-finance-1.png',
-            '/projects/images/consulting-finance-2.png',
-            '/projects/images/consulting-finance-3.png',
+        title: 'Eshtikily – Government Complaints System',
+        slug: 'eshtikily-complaints',
+        sourceCode: 'https://github.com/s3h9a20m20/complaints-system',
+        liveUrl: '',
+        year: 2025,
+        description: `
+        A digital platform that allows citizens to submit government-related complaints through a mobile application, while government employees and system administrators manage and track these complaints via a powerful Web Dashboard.<br/><br/>
+        
+        <strong>Key Features:</strong>
+        <ul>
+          <li>Citizen complaint submission with attachments</li>
+          <li>Status tracking (New – In Progress – Completed – Rejected)</li>
+          <li>Role-based access for Employees and Admin</li>
+          <li>Notes, additional information requests, and reports (PDF/CSV)</li>
+          <li>Focus on non-functional requirements: concurrency control, versioning, and security</li>
+        </ul>
+        `,
+        role: `
+        Frontend Developer (Web Dashboard)<br/>
+        <ul>
+          <li>Developed the complete React.js Web Dashboard for government staff and Admin</li>
+          <li>Implemented complaint management, filtering, status updates, and reporting features</li>
+          <li>Designed clean and user-friendly interfaces focused on usability and performance</li>
+        </ul>
+        `,
+        techStack: [
+            'React.js',
+            'JavaScript',
+            'HTML5',
+            'CSS3',
+            'REST APIs',
+            'Laravel',
         ],
-        sourceCode: 'https://github.com/Tajmirul/crenotive',
-        liveUrl: 'https://crenotive.netlify.app/',
-        year: 2023,
-        description:
-            'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
-        role: ``,
-    },
-    {
-        title: 'devLinks',
-        slug: 'devLinks',
-        techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
-        thumbnail: '/projects/thumbnail/devLinks.jpg',
-        longThumbnail: '/projects/long/devLinks.jpg',
-        images: [
-            '/projects/images/devLinks-1.png',
-            '/projects/images/devLinks-2.png',
-            '/projects/images/devLinks-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/devsLink',
-        liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-        year: 2023,
-        description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
+        thumbnail: '/projects/images/eshtikily-6.png',
+        longThumbnail: '/projects/images/eshtikily-7.png',
 
-            I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
-        role: ``,
+        images: [
+            '/projects/images/eshtikily-1.png',
+            '/projects/images/eshtikily-2.png',
+            '/projects/images/eshtikily-3.png',
+            '/projects/images/eshtikily-4.png',
+            '/projects/images/eshtikily-5.png',
+            '/projects/images/eshtikily-7.png',
+            '/projects/images/eshtikily-8.png',
+        ],
+    },
+    {
+        title: 'Information Retrieval System',
+        slug: 'information-retrieval',
+        sourceCode:
+            'https://github.com/s3h9a20m20/information-retrieval-system-2026',
+        liveUrl: '',
+        year: 2026,
+        description: `
+        A full-scale Information Retrieval engine built on 522,931 documents from the Quora dataset. The system implements and benchmarks multiple retrieval models using a Service-Oriented Architecture.<br/><br/>
+        
+        <strong>Key Features:</strong>
+        <ul>
+          <li>Five retrieval models: TF-IDF, BM25, Semantic Embeddings, Hybrid Serial, Hybrid Parallel (RRF)</li>
+          <li>Interactive Gradio web interface with live BM25 parameter tuning</li>
+          <li>Query Refinement (Spell Correction + Synonym Expansion)</li>
+          <li>Full evaluation on 10,000 queries using Precision@10, Recall, MAP, and nDCG</li>
+        </ul>
+        `,
+        role: `
+        Developer & Researcher<br/>
+        <ul>
+          <li>Participated in building and evaluating multiple retrieval strategies</li>
+          <li>Worked on the overall system architecture (SOA) and evaluation pipeline</li>
+          <li>Contributed to documentation and performance analysis</li>
+        </ul>
+        `,
+        techStack: [
+            'Python',
+            'scikit-learn',
+            'FAISS',
+            'Sentence Transformers',
+            'Rank-BM25',
+            'Gradio',
+            'NLTK',
+        ],
+        thumbnail: '/projects/images/ir-system-13.png',
+        longThumbnail: '/projects/images/ir-system-11.png',
+        images: [
+            '/projects/images/ir-system-1.png',
+            '/projects/images/ir-system-2.png',
+            '/projects/images/ir-system-3.png',
+            '/projects/images/ir-system-4.png',
+            '/projects/images/ir-system-5.png',
+            '/projects/images/ir-system-6.png',
+            '/projects/images/ir-system-7.png',
+            '/projects/images/ir-system-8.png',
+            '/projects/images/ir-system-9.png',
+            '/projects/images/ir-system-10.png',
+            '/projects/images/ir-system-11.png',
+            '/projects/images/ir-system-13.png',
+            '/projects/images/ir-system-14.png',
+            '/projects/images/ir-system-15.png',
+            '/projects/images/ir-system-16.png',
+        ],
+    },
+    {
+        title: 'Advanced Banking System',
+        slug: 'advanced-banking-system',
+        sourceCode: '',
+        liveUrl: '',
+        year: 2025,
+        description: `
+        A complete banking system implementing advanced Object-Oriented Design Patterns to manage accounts, transactions, interest calculation, role-based access, and notifications.<br/><br/>
+        
+        <strong>Design Patterns Used:</strong>
+        <ul>
+          <li>Composite, State, Strategy, Proxy, Chain of Responsibility, Observer, Singleton</li>
+        </ul>
+        `,
+        role: `
+        Backend Developer<br/>
+        <ul>
+          <li>Implemented multiple Design Patterns in a real banking domain</li>
+          <li>Developed transaction processing, interest strategies, and notification system</li>
+          <li>Wrote comprehensive Unit, Integration, Security, and Performance tests (5000 concurrent operations)</li>
+        </ul>
+        `,
+        techStack: [
+            'Java',
+            'JUnit 5',
+            'Mockito',
+            'H2 Database',
+            'Design Patterns',
+        ],
+        thumbnail: '/projects/images/banking-system-2.png',
+        longThumbnail: '/projects/images/banking-system-4.png',
+        images: [
+            '/projects/images/banking-system-1.png',
+            '/projects/images/banking-system-2.png',
+            '/projects/images/banking-system-3.png',
+            '/projects/images/banking-system-4.png',
+            '/projects/images/banking-system-5.png',
+            '/projects/images/banking-system-6.png',
+            '/projects/images/banking-system-7.jpg',
+        ],
+    },
+    {
+        title: 'Smart Hospital ERP System',
+        slug: 'smart-hospital-erp',
+        sourceCode: 'https://github.com/s3h9a20m20/Smart-Hospital-ERP-System',
+        liveUrl: '',
+        year: 2025,
+        description: `
+        A complete Smart Mobile Hospital ERP solution built on Odoo for managing rapid-response medical services, mobile clinics, intelligent ambulance fleets, and emergency field operations.<br/><br/>
+        
+        <strong>Key Modules:</strong>
+        <ul>
+          <li>Tele-Triage Hub & Patient Helpdesk (CRM)</li>
+          <li>Fleet Logistics & Maintenance</li>
+          <li>Pharmaceutical Supply Chain</li>
+          <li>Offline Point of Sale (PoS)</li>
+          <li>Crisis Recruitment + Skills Matrix</li>
+          <li>Custom Odoo Module for Medical License Tracking + Simulated IoT Triage</li>
+        </ul>
+        `,
+        role: `
+        Odoo Developer & Configurator<br/>
+        <ul>
+          <li>Configured and integrated multiple Odoo modules for emergency medical operations</li>
+          <li>Developed a custom Odoo module (Python + XML) for medical license tracking</li>
+          <li>Implemented Role-Based Access Control and multi-user workflows</li>
+        </ul>
+        `,
+        techStack: ['Odoo', 'Python', 'XML', 'PostgreSQL'],
+        thumbnail: '/projects/images/smart-hospital-11.png',
+        longThumbnail: '/projects/images/smart-hospital-18.png',
+        images: [
+            '/projects/images/smart-hospital-1.png',
+            '/projects/images/smart-hospital-2.png',
+            '/projects/images/smart-hospital-3.png',
+            '/projects/images/smart-hospital-4.png',
+            '/projects/images/smart-hospital-5.png',
+            '/projects/images/smart-hospital-6.png',
+            '/projects/images/smart-hospital-7.png',
+            '/projects/images/smart-hospital-8.png',
+            '/projects/images/smart-hospital-9.png',
+            '/projects/images/smart-hospital-10.png',
+            '/projects/images/smart-hospital-12.png',
+            '/projects/images/smart-hospital-13.png',
+            '/projects/images/smart-hospital-14.png',
+            '/projects/images/smart-hospital-15.png',
+            '/projects/images/smart-hospital-16.png',
+            '/projects/images/smart-hospital-17.png',
+            '/projects/images/smart-hospital-19.png',
+            '/projects/images/smart-hospital-20.png',
+            '/projects/images/smart-hospital-24.png',
+            '/projects/images/smart-hospital-25.png',
+            '/projects/images/smart-hospital-26.png',
+            '/projects/images/smart-hospital-27.png',
+            '/projects/images/smart-hospital-28.png',
+            '/projects/images/smart-hospital-29.png',
+            '/projects/images/smart-hospital-30.png',
+            '/projects/images/smart-hospital-31.png',
+            '/projects/images/smart-hospital-32.png',
+            '/projects/images/smart-hospital-33.png',
+            '/projects/images/smart-hospital-34.png',
+        ],
+    },
+    {
+        title: 'Pharmacies & Inventories Management System',
+        slug: 'PharMES',
+        sourceCode: '',
+        liveUrl: '',
+        year: 2025,
+        description: `
+        A responsive web dashboard for managing pharmacies and inventories with real-time stock updates, barcode scanning, and automated reporting.<br/><br/>
+        
+        <strong>Key Features:</strong>
+        <ul>
+          <li>Real-time stock management with barcode scanning</li>
+          <li>Low-stock alerts and offline mode using IndexedDB</li>
+          <li>Automated weekly/monthly inventory reports with PDF export</li>
+          <li>Reduced manual data entry errors by 95%</li>
+        </ul>
+        `,
+        role: `
+        React Developer<br/>
+        <ul>
+          <li>Designed and developed the complete responsive web dashboard using React.js</li>
+          <li>Integrated RESTful APIs for live stock updates</li>
+          <li>Implemented lazy loading, code splitting, and offline functionality</li>
+        </ul>
+        `,
+        techStack: [
+            'React.js',
+            'JavaScript',
+            'HTML5',
+            'CSS3',
+            'REST APIs',
+            'IndexedDB',
+        ],
+        thumbnail: '/projects/images/pharmacy-inventory-7.png',
+        longThumbnail: '/projects/images/pharmacy-inventory-6.png',
+        images: [
+            '/projects/images/pharmacy-inventory-1.png',
+            '/projects/images/pharmacy-inventory-3.png',
+            '/projects/images/pharmacy-inventory-4.png',
+            '/projects/images/pharmacy-inventory-5.png',
+            '/projects/images/pharmacy-inventory-6.png',
+            '/projects/images/pharmacy-inventory-7.png',
+            '/projects/images/pharmacy-inventory-8.png',
+            '/projects/images/pharmacy-inventory-9.png',
+        ],
     },
 ];
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
+        title: 'Software Engineer ',
+        company: '',
+        duration: 'Aug 2026 - Present',
     },
     {
         title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
-    },
-    {
-        title: 'Frontend Engineer',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
-    },
-    {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
+        company: '',
+        duration: 'Oct 2024 - Present',
     },
 ];
